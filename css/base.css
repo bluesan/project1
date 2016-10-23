@@ -1,9 +1,14 @@
 .title {
   background-color: #2a2a2a;
-  color: #73cede;
   font-size: 32px;
   padding:15px 10px 15px 15px;
   text-align: center;
+}
+
+.title a {
+  text-decoration: none;
+  display:block;
+  color: #73cede;
 }
 
 .body_table {
@@ -48,8 +53,9 @@
 }
 
 .main_title {
-  background-color: #ddd9d9;
+  background-color: #a3d5d9;
   width:100%;
-  padding: 5px 0px 5px 20px;
+  padding: 6px 0px 6px 20px;
   font-weight: bold;
+  color:#333;
 }
