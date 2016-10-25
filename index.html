@@ -1,76 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>index</title>
+  <title>HTML Sample Collection</title>
+
+  <!-- include jquery  -->
+  <script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous">
+  </script>
+  <script
+    src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+    integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+    crossorigin="anonymous">
+  </script>
+
+  <!-- inclie my file -->
   <link rel="stylesheet" type="text/css" href="css/base.css" />
+  <script type="text/javascript" src="script/base.js"></script>
 </head>
-<body style="margin:0">
-<div class="title">
-  <a href="index.html">HTML サンプル</a>
+
+<body>
+<!-- Title Bar -->
+<div id="title">
+  <a href="index.html">
+    <img src="image/icon.png" height="25px"/>
+    　HTML Sample Collection　
+    <img src="image/icon.png" height="25px"/>
+  </a>
 </div>
-<div class="body_table">
-  <div id="menu" class="menu">
-    <div class="sub_menu">
-      button
-    </div>
-    <ui class="menu_list">
-      <li><a href="#">xxxxxxxxxx</a></li>
-      <li><a href="#">xxxxxxxxxx</a></li>
-      <li><a href="#">xxxxxxxxxx</a></li>
-      <li><a href="#">xxxxxxxxxx</a></li>
-    </ui>
 
-    <div class="sub_menu">
-      table
-    </div>
-    <ui class="menu_list">
-      <li><a href="#">xxxxxxxxxx</a></li>
-      <li><a href="#">xxxxxxxxxx</a></li>
-      <li><a href="#">xxxxxxxxxx</a></li>
-      <li><a href="#">xxxxxxxxxx</a></li>
-    </ui>
-
-    <div class="sub_menu">
-      checkbox
-    </div>
-    <ui class="menu_list">
-      <li><a href="#">xxxxxxxxxx</a></li>
-      <li><a href="#">xxxxxxxxxx</a></li>
-      <li><a href="#">xxxxxxxxxx</a></li>
-      <li><a href="#">xxxxxxxxxx</a></li>
-    </ui>
-
-    <div class="sub_menu">
-      combo box
-    </div>
-    <ui class="menu_list">
-      <li><a href="#">xxxxxxxxxx</a></li>
-      <li><a href="#">xxxxxxxxxx</a></li>
-      <li><a href="#">xxxxxxxxxx</a></li>
-      <li><a href="#">xxxxxxxxxx</a></li>
-    </ui>
-  </div>
-  <div class="main">
-    <div class="main_title">
-      ■　作業履歴
-    </div>
-    <table style="width:100%; border-width:0">
-      <tr style="background-color:#e2f5f6">
-        <td style="width:40px; text-align:center;">2</td>
-        <td style="width:150px; text-align:center">2016/10/23</td>
-        <td style="padding-left:20px"></td>
-      </tr>
-      <tr style="background-color:#f5fbfb">
-        <td style="width:40px; text-align:center;">1</td>
-        <td style="width:150px; text-align:center">2016/10/23</td>
-        <td style="padding-left:20px">index.html、 base.css 作成</td>
-      </tr>
-    </table>
-  </div>
+<!-- Menu Bar -->
+<div id="menu-box">
+  <div id="toggle"><a href="#">MENU</a></div>
+  <ul id="menu" class="">
+    <li><a href="#">Layout</a></li>
+    <li><a href="#">Box</a></li>
+    <li><a href="#">Menu</a></li>
+    <li><a href="#">List</a></li>
+    <li><a href="#">Button</a></li>
+    <li><a href="#">Table</a></li>
+    <li><a href="#">Text</a></li>
+    <li><a href="#">Others</a></li>
+  </ul>
 </div>
+
 
 </body>
 </html>
