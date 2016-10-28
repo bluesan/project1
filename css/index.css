@@ -26,7 +26,7 @@
   margin-bottom: -29px;
 }
 .box_sub1 , .box_sub2{
-  color:#333;
+  color:#fff;
   font-size:20px;
   font-family:Comic Sans MS;
 }
@@ -35,10 +35,11 @@
 }
 .box_sub1 ul li a , .box_sub2 ul li a{
   text-decoration: none;
-  color:#333;
+  color:#fff;
 }
 .box_sub1 ul li a:hover, .box_sub2 ul li a:hover{
-  color:#fff;
+  color:#eee;
+  font-size:21px;
 }
 
 .box_outer{
@@ -52,37 +53,37 @@
   padding:0;
 }
 #box1   {background-color: #444;}
-#box1-1 {background-color: #064c65;}
-#box1-2 {background-color: #6aa4b8;}
-#box1-3 {background-color: #76afc6;}
+#box1-1 {background-color: #3949ad;}
+#box1-2 {background-color: #4251b1;}
+#box1-3 {background-color: #4b5aba;}
 #box2   {background-color: #404040;}
-#box2-1 {background-color: #176a45;}
-#box2-2 {background-color: #5ac193;}
-#box2-3 {background-color: #6ccfa2;}
+#box2-1 {background-color: #2980b9;}
+#box2-2 {background-color: #378ec7;}
+#box2-3 {background-color: #3c96d1;}
 #box3   {background-color: #444;}
-#box3-1 {background-color: #e4b50a;}
-#box3-2 {background-color: #ebd96b;}
-#box3-3 {background-color: #e9da73;}
+#box3-1 {background-color: #16a085;}
+#box3-2 {background-color: #1fa68b;}
+#box3-3 {background-color: #2fb097;}
 #box4   {background-color: #404040;}
-#box4-1 {background-color: #de7a04;}
-#box4-2 {background-color: #f1b55c;}
-#box4-3 {background-color: #eeba6b;}
+#box4-1 {background-color: #f39c12;}
+#box4-2 {background-color: #f4a62c;}
+#box4-3 {background-color: #f6b041;}
 #box5   {background-color: #444;}
-#box5-1 {background-color: #9f250a;}
-#box5-2 {background-color: #e68b77;}
-#box5-3 {background-color: #eb9886;}
+#box5-1 {background-color: #e67e22;}
+#box5-2 {background-color: #eb852b;}
+#box5-3 {background-color: #f4933e;}
 #box6   {background-color: #404040;}
-#box6-1 {background-color: #831872;}
-#box6-2 {background-color: #d789ca;}
-#box6-3 {background-color: #da95cf;}
+#box6-1 {background-color: #c0392b;}
+#box6-2 {background-color: #c1463a;}
+#box6-3 {background-color: #c25247;}
 #box7   {background-color: #444;}
-#box7-1 {background-color: #3f0e77;}
-#box7-2 {background-color: #b98bf0;}
-#box7-3 {background-color: #c59ef0;}
+#box7-1 {background-color: #8e44ad;}
+#box7-2 {background-color: #934ab1;}
+#box7-3 {background-color: #9b4fba;}
 #box8   {background-color: #404040;}
-#box8-1 {background-color: #282828;}
-#box8-2 {background-color: #a3a2a2;}
-#box8-3 {background-color: #b0adad;}
+#box8-1 {background-color: #2c3e50;}
+#box8-2 {background-color: #36485b;}
+#box8-3 {background-color: #3d4f61;}
 
 fotter {
   width:100%;

@@ -48,9 +48,16 @@ body {
   border-right: 1px solid #444;
   font-family:Comic Sans MS;
 }
-#menu li a:hover{
-  background-color: #777;
-}
+#mlayout:hover {background-color:#3949ad}
+#mbox:hover    {background-color:#2980b9}
+#mmenu:hover   {background-color:#16a085}
+#mlist:hover   {background-color:#f39c12}
+#mbutton:hover {background-color:#e67e22}
+#mtable:hover  {background-color:#c0392b}
+#mtext:hover   {background-color:#8e44ad}
+#mothers:hover {background-color:#2c3e50}
+
+
 #toggle {
   display: none;
 }
