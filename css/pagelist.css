@@ -49,3 +49,20 @@ fotter {
   font-size:28px;
   color:#444;
 }
+
+@media only screen and (max-width: 480px) {
+  .content_outer {
+    height:75px;
+  }
+  .content_inner {
+    height:75px;
+  }
+  #in {
+    font-size:20px;
+    padding-top:28px;
+  }
+  #arrow {
+    padding-top:26px;
+    height:25px;
+  }
+}

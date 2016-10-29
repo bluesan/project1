@@ -2,6 +2,7 @@ body {
   margin:0;
   background-color: #444;
 }
+
 #title {
   color:#444;
   text-align: center;
@@ -69,6 +70,7 @@ body {
 }
 @media only screen and (max-width: 480px) {
   #menu {
+    position:absolute;
     display:none;
   }
   #menu li{

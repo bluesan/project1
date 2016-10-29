@@ -1,0 +1,60 @@
+#menu li a#mlayout {background-color:#3949ad;}
+#countent_title {background-color:#3949ad;}
+#content_inner {
+  background-color:#ddd;
+  height:1024px;
+  max-width: 960px;
+  margin:0 auto;
+  padding:0;
+}
+#content_title {
+  width:100%;
+  padding-top:15px;
+  padding-left:3%;
+  color:#444;
+  font-size:32px;
+  font-family: 'メイリオ';
+  margin-bottom:-10px;
+  float:left;
+}
+#content_title img {
+  float:left;
+}
+#title_inner {
+  float:left;
+  padding-left:10px;
+  padding-top:2px;
+  margin-bottom:-20px;
+}
+#ctitle_line1 {
+  width:96%;
+  margin-left:2%;
+  height:2px;
+  background-color: #555;
+  float:left;
+}
+#ctitle_line2 {
+  width:96%;
+  margin-left:2%;
+  margin-top:1px;
+  height:1px;
+  background-color: #666;
+  float:left;
+}
+#cntnt {
+  width:96%;
+  float:left;
+  padding:2%;
+  color:#333;
+  font-size:16px;
+}
+
+@media only screen and (max-width: 480px) {
+  #content_title {
+    font-size:24px;
+    margin-bottom: -5px;
+  }
+  #content_title img {
+    height:40px;
+  }
+}
