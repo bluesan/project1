@@ -85,13 +85,6 @@
 #box8-2 {background-color: #36485b;}
 #box8-3 {background-color: #3d4f61;}
 
-fotter {
-  width:100%;
-  height:50px;
-  background-color: #222;
-  float:left;
-}
-
 @media only screen and (max-width: 768px) {
   .box {
     width:50%;

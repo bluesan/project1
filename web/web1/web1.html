@@ -52,38 +52,125 @@
 
 <!-- Main Content -->
 <div id="content">
-  <div id="main">
-    <!-- Main title -->
-    <div id="countent_title">
+  <!-- Main title -->
+  <div id="countent_title">
+  </div>
+  <div id="content_inner">
+    <div id="content_title">
+      <img src="../../image/subicon.png" height="50px"/>
+      <div id="title_inner">CSSで可変＋固定のカラムレイアウトを実装する方法</div>
     </div>
-    <div id="content_inner">
-      <div id="content_title">
-        <img src="../../image/subicon.png" height="50px"/>
-        <div id="title_inner">CSSで可変＋固定のカラムレイアウトを実装する方法</div>
+    <div id="ctitle_line1"></div>
+    <div id="ctitle_line2"></div>
+    <div id="cntnt">
+      <img src="1.png" id="img1"/><br><br>
+      CSSで片方の幅が可変、もう片方が固定になるカラムレイアウトを実装する方法を紹介します。<br>
+      <br>
+      以下のHTMLのように３つのdiv要素を用意し、実装していきます。<br>
+      <br>
+      <div id="source_title">HTML</div>
+      <div id="source">
+        &lt;div class="wrapper"&gt;<br>
+        　　&lt;div class="main"&gt;<br>
+        　　　　&lt;!-- valiable width -- &gt;<br>
+        　　&lt;/div&gt;<br>
+        　　&lt;div class="side"&gt;<br>
+        　　　　&lt;!-- fixed width -- &gt;<br>
+        　　&lt;/div&gt;<br>
+        &lt;/div&gt;<br>
       </div>
-      <div id="ctitle_line1"></div>
-      <div id="ctitle_line2"></div>
-      <div id="cntnt">
-        <img src="1.png" id="img1"/><br><br>
-        CSSで片方の幅が可変、もう片方が固定になるカラムレイアウトを実装する方法を紹介します。<br>
-        <br>
-        実装には以下のHTMLのように3つのdiv要素を使用します。<br><br>
-        <div id="source_title">
-          HTML
-        </div>
-        <div id="source">
-          &lt;div class="wrapper"&gt;<br>
-          　　&lt;div class="main"&gt;<br>
-          　　　　&lt;!-- valiable width -- &gt;<br>
-          　　&lt;/div&gt;<br>
-          　　&lt;div class="side"&gt;<br>
-          　　　　&lt;!-- fixed width -- &gt;<br>
-          　　&lt;/div&gt;<br>
-          &lt;/div&gt;<br>
+      <br>
+      実装の方法は以下の４種類があります。<br>
+      <br>
+      <div id="list">1. float + negative margin</div>
+      <br>
+      <div id="source_title">CSS</div>
+      <div id="source">
+        .wrapper {<br>
+        　　overflow: hidden;<br>
+        }<br/>
+        .main {<br>
+        　　float: left;<br>
+        　　width: 100%;<br>
+        　　margin-right: -300px;<br>
+        　　padding-right: 300px;<br>
+        　　box-sizing: border-box;<br>
+        } <br>
+        .side {<br>
+        　　float: right;<br>
+        　　width: 300px;<br>
+        }<br>
       </div>
+      <a href="demo1.html" target="_blank" style="color:#666"> デモページ</a>
+      <br>
+      <br>
+      <div id="list">2. float + calc</div>
+      <br>
+      <div id="source_title">CSS</div>
+      <div id="source">
+        .wrapper {<br>
+        　　overflow: hidden;<br>
+        }<br/>
+        .main {<br>
+        　　float: left;<br>
+        　　width: -webkit-calc(100% - 300px);<br>
+        　　width: calc(100% - 300px);<br>
+        } <br>
+        .side {<br>
+        　　float: right;<br>
+        　　width: 300px;<br>
+        }<br>
+      </div>
+      <a href="demo2.html" target="_blank" style="color:#666"> デモページ</a>
+      <br>
+      <br>
+      <div id="list">3. table</div>
+      <br>
+      <div id="source_title">CSS</div>
+      <div id="source">
+        .wrapper {<br>
+        　　display: table;<br>
+        　　width: 100%;<br>
+        }<br/>
+        .main, .side {<br>
+        　　display: table-cell;<br>
+        　　vertical-align: top;<br>
+        } <br>
+        .side {<br>
+        　　display: table-cell;<br>
+        　　width: 300px;<br>
+        }<br>
+      </div>
+      <a href="demo3.html" target="_blank" style="color:#666"> デモページ</a>
+      <br>
+      <br>
+      <div id="list">4. flexbox</div>
+      <br>
+      <div id="source_title">CSS</div>
+      <div id="source">
+        .wrapper {<br>
+        　　display: -webkit-flex;<br>
+        　　display: flex;<br>
+        }<br/>
+        .main {<br>
+        　　-webkit-flex;<br>
+        　　flex: 1;<br>
+        } <br>
+        .side {<br>
+        　　width: 300px;<br>
+        }<br>
+      </div>
+      <a href="demo4.html" target="_blank" style="color:#666"> デモページ</a>
+      <br>
+      <br>
+      より多くのブラウザに対応させたい場合は、「float + negative margin」か
+       「table」を使用するのが無難です。<br>
+      最近では「flexbox」を用いたデザインが増えてきていますが、対応していないブラウザも
+      存在しています。
     </div>
   </div>
 </div>
+
 
 <!-- footer -->
 <fotter>
