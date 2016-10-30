@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSSで可変＋固定のカラムレイアウトを実装する方法 | Bilp Collection</title>
+
+  <!-- include jquery  -->
+  <script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous">
+  </script>
+  <script
+    src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+    integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+    crossorigin="anonymous">
+  </script>
+
+  <!-- inclie my file -->
+  <link rel="stylesheet" type="text/css" href="../../css/base.css" />
+  <link rel="stylesheet" type="text/css" href="../../css/page.css" />
+  <link rel="stylesheet" type="text/css" href="web2.css" />
+  <script type="text/javascript" src="../../script/base.js"></script>
+
+</head>
+
+<body>
+<!-- Title Bar -->
+<div id="title">
+  <a href="../../index.html">
+    <img src="../../image/icon.png" height="25px" style="padding-right:5px;"/>
+    Bilp Collection
+  </a>
+</div>
+
+<!-- Menu Bar -->
+<div id="menu-box">
+  <div id="toggle"><a href="#">Web</a></div>
+  <ul id="menu" class="">
+    <li><a href="../../web.html" id="mweb">Web</a></li>
+    <li><a href="../../java.html" id="mjava">Java</a></li>
+    <li><a href="../../database.html" id="mdatabase">Database</a></li>
+    <li><a href="../../git.html" id="mgit">Git</a></li>
+    <li><a href="../../vim.html" id="mvim">Vim</a></li>
+    <li><a href="../../powershell.html" id="mpowershell">PowerShell</a></li>
+    <li><a href="../../text.html" id="mtext">Text</a></li>
+    <li><a href="../../others.html" id="mothers">Others</a></li>
+  </ul>
+</div>
+
+<!-- Main Content -->
+<div id="content">
+  <!-- Main title -->
+  <div id="countent_title">
+  </div>
+  <div id="content_inner">
+    <div id="content_title">
+      <img src="../../image/subicon.png" height="50px"/>
+      <div id="title_inner">Webレイアウト一覧</div>
+    </div>
+    <div id="ctitle_line1"></div>
+    <div id="ctitle_line2"></div>
+    <div id="cntnt">
+      <!-- Liquid Layout -->
+      <div id="list">1. Liquid Layout</div><br>
+        リキッドレイアウト (Liquid Layout) とは、ブラウザの幅に合わせてコンテンツの
+        表示範囲・位置・大きさなどを変化させることで、解像度の違いでユーザビリティを損
+        なわないように最適化したレイアウトです。<br>
+        <br>
+        要素の幅 (width) を「%」で指定することで実装します。<br>
+        <br>
+        <a href="demo1.html" target="_blank" style="color:#666"> サンプルページ</a>
+        <br><br><br>
+      <!-- Fiexd Layout -->
+      <div id="list">2. Fixed Layout</div><br>
+        固定幅レイアウト (Fixed Layout) とは、ブラウザの幅に関係なく幅が不変の
+        （固定された）レイアウトです。
+        ブラウザ幅によっては余白が生じたり、一度で表示できないというデメリットが
+        あります。<br>
+        <br>
+        要素の幅 (width) を「px」で指定することで実装します。<br>
+        <br>
+        <a href="demo1.html" target="_blank" style="color:#666"> サンプルページ</a>
+        <br><br><br>
+      <div id="list">3. Flexible Layout</div><br>
+        フレキシブルレイアウト (Flexible Layout) とは、レイアウト幅の範囲
+        (最大値と最小値) を設定し、その範囲内は可変、範囲外は固定となる
+        レイアウトです。<br>
+        <br>
+        リキッドレイアウト同様、要素の幅 (width) を「％」で指定するのに加え、
+        最大幅 (max-width) と最小幅 (min-width) を指定することで実装します。<br>
+        <br>
+        <a href="demo1.html" target="_blank" style="color:#666"> サンプルページ</a>
+        <br><br><br>
+      <div id="list">4. Erastic Layout</div><br>
+        エラスティックレイアウト (Erastic Layout)とは、レイアウト幅の基準に
+        文字数を指定する可変レイアウトです。そのためフォントサイズを大きくす
+        れば幅が広がり、小さくすれば幅が狭まります。<br>
+        <br>
+        要素の幅 (width) を「em」で指定することで実装します。<br>
+        <br>
+        <a href="demo1.html" target="_blank" style="color:#666"> サンプルページ</a>
+        <br><br><br>
+      <div id="list">5. Grid Layout</div><br>
+        グリッドレイアウト (Grid Layout) とは、画面を縦と横で分割した格子に
+        見立て、コンテンツを配置するレイアウトです。<br>
+        <br>
+        <a href="demo1.html" target="_blank" style="color:#666"> サンプルページ</a>
+        <br><br><br>
+      <div id="list">6. Fluid Grid Layout</div><br>
+        可変グリッドレイアウト (Fluid Grid Layout) とは、リキッドレイアウトと
+        グリッドレイアウトを組み合わせたレイアウトで、レイアウト幅によってブロック
+        の表示範囲・位置・サイズなどを設定するレイアウトです。<br>
+        <br>
+        <a href="demo1.html" target="_blank" style="color:#666"> サンプルページ</a>
+        <br><br><br>
+      <div id="list">7. Responsive Web Design</div><br>
+        レスポンシブウェブデザイン (Responsive Web Design) とは、1つのソースで
+        マルチデバイスに対応したデザインの総称です。<br>
+        <br>
+        具体的には、レイアウト幅によってコンテンツの表示範囲・位置・サイズなどを設定
+        することで実装します。
+    </div>
+  </div>
+</div>
+
+<!-- footer -->
+<fotter>
+
+</fotter>
+
+
+</body>
+</html>
