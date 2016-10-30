@@ -37,17 +37,19 @@ fotter {
 }
 
 #arrow {
-  padding-top:30px;
+  padding-top:38px;
   padding-left:30px;
+  height:20px;
   float:left;
 }
 
 #in {
   float:left;
   padding-left:20px;
-  padding-top:32px;
-  font-size:28px;
+  padding-top:35px;
+  font-size:24px;
   color:#444;
+  width:80%
 }
 
 @media only screen and (max-width: 480px) {
@@ -58,11 +60,11 @@ fotter {
     height:75px;
   }
   #in {
-    font-size:20px;
-    padding-top:28px;
+    font-size:16px;
+    padding-top:30px;
   }
   #arrow {
-    padding-top:26px;
-    height:25px;
+    padding-top:28px;
+    height:20px;
   }
 }

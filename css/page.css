@@ -1,5 +1,10 @@
-#menu li a#mlayout {background-color:#3949ad;}
-#countent_title {background-color:#3949ad;}
+#countent_title {
+  width:100%;
+  height:5px;
+  max-width: 960px;
+  margin:0 auto;
+  padding:0;
+}
 #content_inner {
   background-color:#ddd;
   height:1024px;
@@ -11,20 +16,21 @@
   width:100%;
   padding-top:15px;
   padding-left:3%;
-  color:#444;
-  font-size:32px;
+  color:#555;
+  font-size:22px;
   font-family: 'メイリオ';
-  margin-bottom:-10px;
+  margin-bottom:-8px;
   float:left;
 }
 #content_title img {
+  height:34px;
   float:left;
 }
 #title_inner {
   float:left;
+  width:80%;
   padding-left:10px;
   padding-top:2px;
-  margin-bottom:-20px;
 }
 #ctitle_line1 {
   width:96%;
@@ -42,19 +48,24 @@
   float:left;
 }
 #cntnt {
-  width:96%;
+  width:90%;
   float:left;
-  padding:2%;
-  color:#333;
+  padding-left:5%;
+  padding-top:20px;
+  color:#666;
   font-size:16px;
+  font-family: "メイリオ";
 }
 
 @media only screen and (max-width: 480px) {
   #content_title {
-    font-size:24px;
+    font-size:18px;
     margin-bottom: -5px;
   }
   #content_title img {
-    height:40px;
+    height:30px;
+  }
+  #cntnt {
+    font-size:14px;
   }
 }

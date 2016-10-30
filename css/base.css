@@ -5,7 +5,6 @@ body {
 
 #title {
   color:#444;
-  text-align: center;
   font-size:28px;
   font-family: fantasy;
   padding:10px 0px 5px 0px;
@@ -17,6 +16,10 @@ body {
   display:block;
   text-decoration: none;
   color: #444;
+  width: 100%;
+  max-width:960px;
+  margin: 0 auto;
+  padding-left:5%;
 }
 
 #menu-box {
@@ -49,14 +52,14 @@ body {
   border-right: 1px solid #444;
   font-family:Comic Sans MS;
 }
-#mlayout:hover {background-color:#3949ad}
-#mbox:hover    {background-color:#2980b9}
-#mmenu:hover   {background-color:#16a085}
-#mlist:hover   {background-color:#f39c12}
-#mbutton:hover {background-color:#e67e22}
-#mtable:hover  {background-color:#c0392b}
-#mtext:hover   {background-color:#8e44ad}
-#mothers:hover {background-color:#2c3e50}
+#mweb:hover        {background-color:#3949ad}
+#mjava:hover       {background-color:#2980b9}
+#mdatabase:hover   {background-color:#16a085}
+#mgit:hover        {background-color:#f39c12}
+#mvim:hover        {background-color:#e67e22}
+#mpowershell:hover {background-color:#c0392b}
+#mtext:hover       {background-color:#8e44ad}
+#mothers:hover     {background-color:#2c3e50}
 
 
 #toggle {
