@@ -56,6 +56,24 @@
   font-family: "メイリオ";
 }
 
+#list {
+  font-size:20px;
+  color:#fff;
+  background-color: #3d4557;
+  padding:5px;
+  padding-left:15px;
+  border-radius: 0px;
+}
+
+#sublist {
+  font-size:16px;
+  color:#fff;
+  background-color: #3d4557;
+  padding:3px;
+  padding-left:25px;
+  border-radius: 20px;
+}
+
 @media only screen and (max-width: 480px) {
   #content_title {
     font-size:18px;
@@ -67,28 +85,7 @@
   #cntnt {
     font-size:14px;
   }
-}
-
-#source_title {
-  width:98%;
-  padding:5px 0px 5px 20px;
-  background-color:#bdc1c9;
-  color:#444;
-  font-weight: bold;
-}
-
-#source {
-  width:98%;
-  background-color: #d4d6d7;
-  padding:20px 0px 20px 20px;
-  font-size:14px;
-}
-
-#list {
-  font-size:22px;
-  color:#fff;
-  background-color: #3d4557;
-  padding:5px;
-  padding-left:15px;
-  border-radius: 0px;
+  #list {
+    font-size:16px;
+  }
 }

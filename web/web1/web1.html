@@ -18,6 +18,14 @@
     crossorigin="anonymous">
   </script>
 
+  <!-- include SyntaxHighlighter -->
+  <script type="text/javascript" src="../../script/shCore.js"></script>
+  <script type="text/javascript" src="../../script/shBrushXML.js"></script>
+  <script type="text/javascript" src="../../script/shBrushCSS.js"></script>
+  <link type="text/css" rel="stylesheet" href="../../css/shThemeRDark.css"/>
+  <script type="text/javascript">SyntaxHighlighter.all();</script>
+
+
   <!-- inclie my file -->
   <link rel="stylesheet" type="text/css" href="../../css/base.css" />
   <link rel="stylesheet" type="text/css" href="../../css/page.css" />
@@ -68,95 +76,90 @@
       <br>
       以下のHTMLのように３つのdiv要素を用意し、実装していきます。<br>
       <br>
-      <div id="source_title">HTML</div>
-      <div id="source">
-        &lt;div class="wrapper"&gt;<br>
-        　　&lt;div class="main"&gt;<br>
-        　　　　&lt;!-- valiable width -- &gt;<br>
-        　　&lt;/div&gt;<br>
-        　　&lt;div class="side"&gt;<br>
-        　　　　&lt;!-- fixed width -- &gt;<br>
-        　　&lt;/div&gt;<br>
-        &lt;/div&gt;<br>
-      </div>
+      <pre class="brush:html; toolbar:false" title="HTML">
+        &lt;div class="wrapper"&gt;
+        　　&lt;div class="main"&gt;
+        　　　　&lt;!-- valiable width -- &gt;
+        　　&lt;/div&gt;
+        　　&lt;div class="side"&gt;
+        　　　　&lt;!-- fixed width -- &gt;
+        　　&lt;/div&gt;
+        &lt;/div&gt;
+      </pre>
       <br>
       実装の方法は以下の４種類があります。<br>
       <br><br>
       <div id="list">1. float + negative margin</div>
       <br>
-      <div id="source_title">CSS</div>
-      <div id="source">
-        .wrapper {<br>
-        　　overflow: hidden;<br>
-        }<br/>
-        .main {<br>
-        　　float: left;<br>
-        　　width: 100%;<br>
-        　　margin-right: -300px;<br>
-        　　padding-right: 300px;<br>
-        　　box-sizing: border-box;<br>
-        } <br>
-        .side {<br>
-        　　float: right;<br>
-        　　width: 300px;<br>
-        }<br>
-      </div>
+      <pre class="brush:css; toolbar:false" title="CSS">
+        .wrapper {
+        　　overflow: hidden;
+        }
+        .main {
+        　　float: left;
+        　　width: 100%;
+        　　margin-right: -300px;
+        　　padding-right: 300px;
+        　　box-sizing: border-box;
+        }
+        .side {
+        　　float: right;
+        　　width: 300px;
+        }
+      </pre>
       <a href="demo1.html" target="_blank" style="color:#666"> デモページ</a>
       <br><br><br>
       <div id="list">2. float + calc</div>
       <br>
-      <div id="source_title">CSS</div>
-      <div id="source">
-        .wrapper {<br>
-        　　overflow: hidden;<br>
-        }<br/>
-        .main {<br>
-        　　float: left;<br>
-        　　width: -webkit-calc(100% - 300px);<br>
-        　　width: calc(100% - 300px);<br>
-        } <br>
-        .side {<br>
-        　　float: right;<br>
-        　　width: 300px;<br>
-        }<br>
-      </div>
+      <pre class="brush:css; toolbar:false" title="CSS">
+        .wrapper {
+        　　overflow: hidden;
+        }
+        .main {
+        　　float: left;
+        　　width: -webkit-calc(100% - 300px);
+        　　width: calc(100% - 300px);
+        }
+        .side {
+        　　float: right;
+        　　width: 300px;
+        }
+      </pre>
       <a href="demo2.html" target="_blank" style="color:#666"> デモページ</a>
       <br><br><br>
       <div id="list">3. table</div>
       <br>
-      <div id="source_title">CSS</div>
-      <div id="source">
-        .wrapper {<br>
-        　　display: table;<br>
-        　　width: 100%;<br>
-        }<br/>
-        .main, .side {<br>
-        　　display: table-cell;<br>
-        　　vertical-align: top;<br>
-        } <br>
-        .side {<br>
-        　　display: table-cell;<br>
-        　　width: 300px;<br>
-        }<br>
-      </div>
+      <pre class="brush:css; toolbar:false" title="CSS">
+        .wrapper {
+        　　display: table;
+        　　width: 100%;
+        }
+        .main, .side {
+        　　display: table-cell;
+        　　vertical-align: top;
+        }
+        .side {
+        　　display: table-cell;
+        　　width: 300px;
+        }
+      </pre>
       <a href="demo3.html" target="_blank" style="color:#666"> デモページ</a>
       <br><br><br>
       <div id="list">4. flexbox</div>
       <br>
-      <div id="source_title">CSS</div>
-      <div id="source">
-        .wrapper {<br>
-        　　display: -webkit-flex;<br>
-        　　display: flex;<br>
-        }<br/>
-        .main {<br>
-        　　-webkit-flex;<br>
-        　　flex: 1;<br>
-        } <br>
-        .side {<br>
-        　　width: 300px;<br>
-        }<br>
-      </div>
+      <pre class="brush:css; toolbar:false" title="CSS">
+        .wrapper {
+        　　display: -webkit-flex;
+        　　display: flex;
+        }
+        .main {
+        　　-webkit-flex;
+        　　flex: 1;
+        }
+        .side {
+        　　width: 300px;
+        }
+      </pre>
       <a href="demo4.html" target="_blank" style="color:#666"> デモページ</a>
       <br><br><br>
       より多くのブラウザに対応させたい場合は、「float + negative margin」か
