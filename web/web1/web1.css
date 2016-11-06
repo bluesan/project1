@@ -1,15 +1,10 @@
 #menu li a#mweb {background-color:#3949ad;}
 #countent_title {background-color:#3949ad;}
-#content_inner {height:2700px;}
+#content_inner {height:2900px;}
 
 #img1 {
   padding-top:20px;
   padding-bottom:10px;
   width:80%;
   padding-left:10%;
-}
-
-#list {
-  font-size:22px;
-  color:#444;
 }
